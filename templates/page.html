@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    {{ heading }}
+{% endblock title %}
+{% block content %}
+        <h1>{{ heading }}</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-auto">
+                <img height="300px" class="mb-3 mt-3" src="{% static pic %}" alt="">
+            </div>
+        </div>
+    </div>
+
+        <p>{{ desc }}</p>
+        <a href="{{ link }}">Подробнее в Википедии</a>
+{% endblock content %}
